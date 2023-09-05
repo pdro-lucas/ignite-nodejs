@@ -142,5 +142,9 @@ dist
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/node
-*/**/db/app.db
+*/**/db/*.db
+
+.env
 .env.test
+
+build
