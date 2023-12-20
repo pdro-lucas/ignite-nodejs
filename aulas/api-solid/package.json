@@ -15,7 +15,8 @@
     "test:e2e:watch": "vitest --dir src/http",
     "test:install-prisma-environment": "pnpm link --global vitest-environment-prisma",
     "test:ui": "vitest --ui",
-    "test:watch": "vitest --dir src/use-cases"
+    "test:watch": "vitest --dir src/use-cases",
+    "lint": "eslint --ext .ts src"
   },
   "keywords": [],
   "author": "",
