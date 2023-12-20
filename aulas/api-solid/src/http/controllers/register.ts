@@ -20,6 +20,8 @@ export async function register(request: FastifyRequest, reply: FastifyReply) {
       email,
       password,
     })
+
+    reply.status(201).send()
   } catch (error) {
     if (error instanceof UserAlreadyExistsError) {
       reply.status(409).send({
