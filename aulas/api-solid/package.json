@@ -12,6 +12,7 @@
     "test:coverage": "vitest --coverage",
     "test:create-prisma-environment": "pnpm link --global --dir ./prisma/vitest-environment-prisma",
     "test:e2e": "vitest run --dir src/http",
+    "test:e2e:watch": "vitest --dir src/http",
     "test:install-prisma-environment": "pnpm link --global vitest-environment-prisma",
     "test:ui": "vitest --ui",
     "test:watch": "vitest --dir src/use-cases"
@@ -22,12 +23,14 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "2.1.0",
     "@types/node": "20.10.0",
+    "@types/supertest": "2.0.16",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@vitest/coverage-v8": "0.34.6",
     "@vitest/ui": "0.34.6",
     "eslint": "8.54.0",
     "npm-run-all": "4.1.5",
     "prisma": "5.6.0",
+    "supertest": "6.3.3",
     "tsup": "8.0.1",
     "tsx": "4.5.0",
     "typescript": "5.3.2",
