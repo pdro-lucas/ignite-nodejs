@@ -1,5 +1,6 @@
 import type { FastifyInstance } from 'fastify'
 
+import { verifyUserRole } from '@/http/middlewares/verifyUserRole'
 import { verifyJWT } from '../../middlewares/verify-jwt'
 import { create } from './create'
 import { history } from './history'
@@ -14,5 +15,11 @@ export async function checkInsRoutes(app: FastifyInstance): Promise<void> {
 
   app.post('/gyms/:gymId/check-ins', create)
 
-  app.patch('/check-ins/:checkInId/validate', validate)
+  app.patch(
+    '/check-ins/:checkInId/validate',
+    {
+      onRequest: verifyUserRole('ADMIN'),
+    },
+    validate,
+  )
 }
