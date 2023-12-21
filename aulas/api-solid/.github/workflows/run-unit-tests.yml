@@ -14,12 +14,12 @@ jobs:
         with:
           version: 8
 
+      - run: cd aulas/api-solid
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: 'pnpm'
-
-      - run: cd aulas/api-solid
 
       - run: pnpm install --silent
 
