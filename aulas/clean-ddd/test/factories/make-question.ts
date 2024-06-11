@@ -4,16 +4,22 @@ import {
   QuestionProps,
 } from '@/domain/forum/enterprise/entities/question'
 import { Slug } from '@/domain/forum/enterprise/entities/value-objects/slug'
+import { faker } from '@faker-js/faker'
 
-export function makeQuestion(override: Partial<QuestionProps> = {}) {
-  const question = Question.create({
-    title: 'What is the best way to learn React?',
-    content:
-      'I am trying to learn React and I am not sure what is the best way to do it. Can someone give me some tips?',
-    slug: Slug.create('what-is-the-best-way-to-learn-react'),
-    authorId: new UniqueEntityID(),
-    ...override,
-  })
+export function makeQuestion(
+  override: Partial<QuestionProps> = {},
+  id?: UniqueEntityID,
+) {
+  const question = Question.create(
+    {
+      title: faker.lorem.sentence(),
+      content: faker.lorem.text(),
+      slug: Slug.create('what-is-the-best-way-to-learn-react'),
+      authorId: new UniqueEntityID(),
+      ...override,
+    },
+    id,
+  )
 
   return question
 }
