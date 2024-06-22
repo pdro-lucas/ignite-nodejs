@@ -1,5 +1,5 @@
 import { makeAnswer } from 'test/factories/make-answer'
-import { InMemoryAnswerCommentRepository } from 'test/repositories/in-memory-answer-comments'
+import { InMemoryAnswerCommentRepository } from 'test/repositories/in-memory-answer-comments-repository'
 import { InMemoryAnswerRepository } from 'test/repositories/in-memory-answer-repository'
 import { CommentOnAnswerUseCase } from './comment-on-answer'
 
