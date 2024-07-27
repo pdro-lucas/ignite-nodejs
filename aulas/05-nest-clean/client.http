@@ -30,6 +30,13 @@ Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "How to create a new account?",
-  "content": "I'm trying to create a new account but I'm getting an error. Can someone help me?"
+  "title": "How is everyone doing?",
+  "content": "Hello, I am new here. How is everyone doing? I hope you are all doing well."
 }
+
+###
+
+# @name fetch-recent-questions
+GET  {{baseUrl}}/questions?page=2
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
