@@ -10,6 +10,7 @@ export class ZodValidationPipe implements PipeTransform {
       const parsedValue = this.schema.parse(value)
       return parsedValue
     } catch (error) {
+      console.log('erro', error)
       if (error instanceof ZodError) {
         throw new BadRequestException({
           message: 'Validation failed',
