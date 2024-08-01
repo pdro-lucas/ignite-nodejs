@@ -30,7 +30,7 @@ Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "How is everyone doing?",
+  "title": "How is everyone doing today?",
   "content": "Hello, I am new here. How is everyone doing? I hope you are all doing well."
 }
 
