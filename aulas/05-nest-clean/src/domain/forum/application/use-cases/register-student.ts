@@ -25,7 +25,7 @@ export class RegisterStudentUseCase {
     private hashGenerator: HashGenerator,
   ) {}
 
-  async excute({
+  async execute({
     name,
     email,
     password,
