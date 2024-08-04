@@ -30,7 +30,7 @@ describe('Fetch Recent Questions', () => {
       makeQuestion({ createdAt: new Date(2024, 0, 23) }),
     )
 
-    const result = await sut.excute({
+    const result = await sut.execute({
       page: 1,
     })
 
@@ -54,7 +54,7 @@ describe('Fetch Recent Questions', () => {
       await inMemoryQuestionsRepository.create(makeQuestion())
     }
 
-    const result = await sut.excute({
+    const result = await sut.execute({
       page: 2,
     })
 

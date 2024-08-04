@@ -29,7 +29,7 @@ export class EditQuestionUseCase {
     private questionAttachmentsRepository: QuestionAttachmentsRepository,
   ) {}
 
-  async excute({
+  async execute({
     questionId,
     authorId,
     title,

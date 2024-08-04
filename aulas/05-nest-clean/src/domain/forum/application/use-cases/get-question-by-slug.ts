@@ -17,7 +17,7 @@ type GetQuestionBySlugUseCaseResponse = Either<
 export class GetQuestionBySlugUseCase {
   constructor(private questionRepository: QuestionRepository) {}
 
-  async excute({
+  async execute({
     slug,
   }: GetQuestionBySlugUseCaseRequest): Promise<GetQuestionBySlugUseCaseResponse> {
     const question = await this.questionRepository.findBySlug(slug)

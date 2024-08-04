@@ -31,7 +31,7 @@ describe('Fetch Answers AnswerComments', () => {
       }),
     )
 
-    const result = await sut.excute({
+    const result = await sut.execute({
       answerId: 'answer-1',
       page: 1,
     })
@@ -48,7 +48,7 @@ describe('Fetch Answers AnswerComments', () => {
       )
     }
 
-    const result = await sut.excute({
+    const result = await sut.execute({
       answerId: 'answer-1',
       page: 2,
     })

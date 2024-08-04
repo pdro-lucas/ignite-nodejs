@@ -16,7 +16,7 @@ type DeleteAnswerUseCaseResponse = Either<
 export class DeleteAnswerUseCase {
   constructor(private answerRepository: AnswersRepository) {}
 
-  async excute({
+  async execute({
     answerId,
     authorId,
   }: DeleteAnswerUseCaseRequest): Promise<DeleteAnswerUseCaseResponse> {

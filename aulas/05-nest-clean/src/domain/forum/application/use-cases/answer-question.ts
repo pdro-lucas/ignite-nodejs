@@ -22,7 +22,7 @@ type AnswerQuestionUseCaseResponse = Either<
 export class AnswerQuestionUseCase {
   constructor(private answersRepository: AnswersRepository) {}
 
-  async excute({
+  async execute({
     instructorId,
     questionId,
     content,

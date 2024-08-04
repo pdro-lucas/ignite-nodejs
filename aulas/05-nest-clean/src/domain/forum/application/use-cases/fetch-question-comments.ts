@@ -17,7 +17,7 @@ type FetchQuestionAnswersUseCaseResponse = Either<
 export class FetchQuestionCommentsUseCase {
   constructor(private questionCommentsRepository: QuestionCommentsRepository) {}
 
-  async excute({
+  async execute({
     page,
     questionId,
   }: FetchQuestionAnswersUseCaseRequest): Promise<FetchQuestionAnswersUseCaseResponse> {

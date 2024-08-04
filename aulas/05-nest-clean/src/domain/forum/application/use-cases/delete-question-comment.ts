@@ -16,7 +16,7 @@ type DeleteQuestionCommentUseCaseResponse = Either<
 export class DeleteQuestionCommentUseCase {
   constructor(private questionCommentsRepository: QuestionCommentsRepository) {}
 
-  async excute({
+  async execute({
     authorId,
     questionCommentId,
   }: DeleteQuestionCommentUseCaseRequest): Promise<DeleteQuestionCommentUseCaseResponse> {

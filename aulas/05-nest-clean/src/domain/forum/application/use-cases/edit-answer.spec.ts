@@ -45,7 +45,7 @@ describe('Edit Answer', () => {
       }),
     )
 
-    await sut.excute({
+    await sut.execute({
       answerId: newAnswer.id.toValue(),
       authorId: 'author-1',
       content: 'New Content',
@@ -76,7 +76,7 @@ describe('Edit Answer', () => {
 
     await inMemoryAnswersRepository.create(newAnswer)
 
-    const result = await sut.excute({
+    const result = await sut.execute({
       answerId: 'answer-1',
       authorId: 'author-2',
       content: 'New Content',

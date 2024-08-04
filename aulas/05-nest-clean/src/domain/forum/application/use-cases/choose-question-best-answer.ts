@@ -23,7 +23,7 @@ export class ChooseQuestionBestAnswerUseCase {
     private answersRepository: AnswersRepository,
   ) {}
 
-  async excute({
+  async execute({
     authorId,
     answerId,
   }: ChooseQuestionBestAnswerUseCaseRequest): Promise<ChooseQuestionBestAnswerUseCaseResponse> {

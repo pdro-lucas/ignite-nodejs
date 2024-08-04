@@ -50,7 +50,7 @@ describe('On Question Best Answer Chosen', () => {
       sendNotificationUseCase,
     )
 
-    sendNotificationExecuteSpy = vi.spyOn(sendNotificationUseCase, 'excute')
+    sendNotificationExecuteSpy = vi.spyOn(sendNotificationUseCase, 'execute')
   })
 
   it('should send a notification when question has neew best answer chosen', async () => {

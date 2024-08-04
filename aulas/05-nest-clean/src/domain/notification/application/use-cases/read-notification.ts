@@ -19,7 +19,7 @@ type ReadNotificationUseCaseResponse = Either<
 export class ReadNotificationUseCase {
   constructor(private notificationRepository: NotificationsRepository) {}
 
-  async excute({
+  async execute({
     recipientId,
     notificationId,
   }: ReadNotificationUseCaseRequest): Promise<ReadNotificationUseCaseResponse> {

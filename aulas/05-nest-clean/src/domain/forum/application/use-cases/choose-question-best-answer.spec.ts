@@ -45,7 +45,7 @@ describe('Choose Question Best Answer', () => {
     await inMemoryQuestionsRepository.create(question)
     await inMemoryAnswersRepository.create(answer)
 
-    await sut.excute({
+    await sut.execute({
       answerId: answer.id.toString(),
       authorId: question.authorId.toString(),
     })
@@ -65,7 +65,7 @@ describe('Choose Question Best Answer', () => {
     await inMemoryQuestionsRepository.create(question)
     await inMemoryAnswersRepository.create(answer)
 
-    const result = await sut.excute({
+    const result = await sut.execute({
       answerId: answer.id.toString(),
       authorId: 'author-2',
     })

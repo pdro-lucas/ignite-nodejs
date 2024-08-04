@@ -25,7 +25,7 @@ export class AuthenticateStudentUseCase {
     private encrypter: Encrypter,
   ) {}
 
-  async excute({
+  async execute({
     email,
     password,
   }: AuthenticateStudentUseCaseRequest): Promise<AuthenticateStudentUseCaseResponse> {

@@ -42,7 +42,7 @@ describe('Delete Question', () => {
       }),
     )
 
-    await sut.excute({
+    await sut.execute({
       questionId: 'question-1',
       authorId: 'author-1',
     })
@@ -61,7 +61,7 @@ describe('Delete Question', () => {
 
     await inMemoryQuestionsRepository.create(newQuestion)
 
-    const result = await sut.excute({
+    const result = await sut.execute({
       questionId: 'question-1',
       authorId: 'author-2',
     })

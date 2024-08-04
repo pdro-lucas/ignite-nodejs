@@ -19,7 +19,7 @@ describe('Delete Answer Comment', () => {
 
     await inMemoryAnswerCommentsRepository.create(answerComment)
 
-    await sut.excute({
+    await sut.execute({
       answerCommentId: answerComment.id.toString(),
       authorId: answerComment.authorId.toString(),
     })
@@ -34,7 +34,7 @@ describe('Delete Answer Comment', () => {
 
     await inMemoryAnswerCommentsRepository.create(answerComment)
 
-    const result = await sut.excute({
+    const result = await sut.execute({
       answerCommentId: answerComment.id.toString(),
       authorId: 'another-user-id',
     })

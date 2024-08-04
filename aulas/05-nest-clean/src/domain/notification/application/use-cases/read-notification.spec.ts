@@ -20,7 +20,7 @@ describe('Read Notification', () => {
 
     inMemoryNotificationRepository.create(notification)
 
-    const result = await sut.excute({
+    const result = await sut.execute({
       notificationId: notification.id.toString(),
       recipientId: notification.recipientId.toString(),
     })
@@ -38,7 +38,7 @@ describe('Read Notification', () => {
 
     inMemoryNotificationRepository.create(notification)
 
-    const result = await sut.excute({
+    const result = await sut.execute({
       notificationId: notification.id.toString(),
       recipientId: 'another-user',
     })

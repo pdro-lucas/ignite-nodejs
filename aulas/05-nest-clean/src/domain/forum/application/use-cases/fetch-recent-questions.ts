@@ -18,7 +18,7 @@ type FetchRecentQuestionsUseCaseResponse = Either<
 export class FetchRecentQuestionsUseCase {
   constructor(private questionRepository: QuestionRepository) {}
 
-  async excute({
+  async execute({
     page,
   }: FetchRecentQuestionsUseCaseRequest): Promise<FetchRecentQuestionsUseCaseResponse> {
     const questions = await this.questionRepository.findManyRecent({ page })

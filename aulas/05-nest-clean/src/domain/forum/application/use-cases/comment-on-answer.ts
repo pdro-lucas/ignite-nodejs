@@ -24,7 +24,7 @@ export class CommentOnAnswerUseCase {
     private answerCommentsRepository: AnswerCommentsRepository,
   ) {}
 
-  async excute({
+  async execute({
     authorId,
     answerId,
     content,

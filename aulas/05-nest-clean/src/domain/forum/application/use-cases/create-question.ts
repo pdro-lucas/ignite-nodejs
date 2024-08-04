@@ -24,7 +24,7 @@ type CreateQuestionUseCaseResponse = Either<
 export class CreateQuestionUseCase {
   constructor(private questionRepository: QuestionRepository) {}
 
-  async excute({
+  async execute({
     authorId,
     title,
     content,

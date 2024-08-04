@@ -19,7 +19,7 @@ export type SendNotificationUseCaseResponse = Either<
 export class SendNotificationUseCase {
   constructor(private notificationRepository: NotificationsRepository) {}
 
-  async excute({
+  async execute({
     recipientId,
     title,
     content,

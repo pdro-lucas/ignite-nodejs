@@ -28,7 +28,7 @@ export class EditAnswerUseCase {
     private answerAttachmentsRepository: AnswerAttachmentsRepository,
   ) {}
 
-  async excute({
+  async execute({
     answerId,
     authorId,
     content,
